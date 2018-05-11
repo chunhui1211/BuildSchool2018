@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tax</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-9 text-center">
+                <h3>稅額試算</h3>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtNetIncome" class="col-2 col-form-label text-right">所得淨額</label>
+            <div class="input-group col-6">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+                <input type="text" class="form-control" id="txtNetIncome" />
+            </div>
+            <div class="col-1">
+                <button id="submit" class="btn btn-primary">
+                    <i class="fas fa-calculator"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="txtTaxRate" class="col-3 col-form-label text-right">稅率</label>
+        <div class="input-group col-5">
+            <input type="text" class="form-control" readonly maxlength="5" id="txtTaxRate" />
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <i class="fas fa-percent"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="form-group row">
+        <label for="txtTaxAdjustment" class="col-3 col-form-label text-right">累進差額</label>
+        <div class="input-group col-5">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" readonly id="txtTaxAdjustment" />
+        </div>
+    </div>
+    </div>
+    <div class="form-group row">
+        <label for="txtTaxAmount" class="col-3 col-form-label text-right">應納稅額</label>
+        <div class="input-group col-5">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" readonly id="txtTaxAmount" />
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        // var netincomes = [437482, 609385, 938271, 1132785, 3090218, 6448293, 9938100, 10102837, 18902831];
+        var taxArrat = [{
+                raterate: 0.05,
+                money: 0
+            },
+            {
+                raterate: 0.12,
+                money: 37800
+            },
+            {
+                raterate: 0.20,
+                money: 134600
+            },
+            {
+                raterate: 0.30,
+                money: 376600
+            },
+            {
+                raterate: 0.40,
+                money: 829600
+            },
+            {
+                raterate: 0.45,
+                money: 1345100
+            }
+        ]
+        var rate = function (x) {
+            if (x < 540000) return 0;
+            if (x >= 540001 && x < 1210000) return 1;
+            if (x >= 1210001 && x < 2420000) return 2;
+            if (x >= 2420001 && x < 4530000) return 3;
+            if (x >= 4530001 && x < 10310000) return 4;
+            return 5;
+        }
+
+        var submit = document.getElementById("submit");
+        submit.onclick = function () {
+            var netincomes = document.getElementById("txtNetIncome").value;
+            var x = rate(netincomes);
+            document.getElementById("txtTaxRate").value = taxArrat[x].raterate;
+            document.getElementById("txtTaxAdjustment").value = taxArrat[x].money;
+            document.getElementById("txtTaxAmount").value = netincomes * taxArrat[x].raterate - taxArrat[x].money;
+        }
+    </script>
+</body>
+
+</html>

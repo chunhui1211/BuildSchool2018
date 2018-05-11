@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Conversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row " style="border:1px #333 solid">
+            <div class="col-2 mt-3 ml-3 mb-3 " style="border:1px #333 solid">
+                <div class="form-check mt-5">
+                    
+                    <input id="radc" class="form-check-input" type="radio" name="1"  checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        攝氏轉換為華氏
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input id="radf" class="form-check-input" type="radio" name="1" >
+                    <label class="form-check-label" for="exampleRadios2">
+                        華氏轉換為攝氏
+                    </label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col mt-3 ">
+                    <button type="button" class="btn btn-outline-dark">1</button>
+                    <button type="button" class="btn btn-outline-dark">2</button>
+                    <button type="button" class="btn btn-outline-dark">3</button>
+                </div>
+                <div class="col mt-1">
+                    <button type="button" class="btn btn-outline-dark">4</button>
+                    <button type="button" class="btn btn-outline-dark">5</button>
+                    <button type="button" class="btn btn-outline-dark">6</button>
+                </div>
+                <div class="col mt-1 mb-1">
+                    <button type="button" class="btn btn-outline-dark">7</button>
+                    <button type="button" class="btn btn-outline-dark">8</button>
+                    <button type="button" class="btn btn-outline-dark">9</button>
+                </div>
+                <div class="col mb-2">
+                    <button type="button" class="btn btn-outline-dark">0</button>
+                    <button type="button" class="btn btn-outline-dark">.</button>
+                </div>
+            </div>
+            <div class="col mt-2">
+                <br/>
+                <input type="text" id="txtTempc" value="" class="form-control" />
+
+                <button id="chang" type="button" class="btn btn-primary btn-sm mb-2">轉換</button>
+                <button id="cmdclean" type="button" class="btn btn-secondary btn-sm mb-2">清除</button>
+                <br/>
+                <label for="ans">結果:</label>
+                <input type="text" id="outputF" readonly class="form-control" />
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var buttons = document.getElementsByTagName("button");
+        for (var i = 0; i < buttons.length; i++) {
+            var button = buttons[i];
+            button.onclick = function () {
+                var btn = event.srcElement;
+                document.getElementById("txtTempc").value += btn.innerText;
+            };
+        }
+
+        var cmdclean = document.getElementById("cmdclean");
+        cmdclean.onclick = function () {
+            document.getElementById("txtTempc").value = "";
+            document.getElementById("outputF").value = "";
+        }
+        
+        
+        var chang = document.getElementById("chang");
+        chang.onclick=function(){
+            
+            var tempC = parseInt(document.getElementById("txtTempc").value);
+            if(radc.checked)
+            {
+            var tempF = (tempC * 1.8) + 32;
+            }
+            else
+            {
+                var tempF = (tempC -32) /1.8;
+            }
+            document.getElementById("outputF").value = tempF;
+        }
+
+        var radc=document.getElementById("radc");
+        var radf=document.getElementById("radf");
+
+        
+    </script>
+</body>
+
+</html>

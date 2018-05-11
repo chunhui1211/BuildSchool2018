@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>4A1B</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin:5% 0 0 35%;">
+        <div class="row">
+            <div class="col-2 ">
+                <button type="button" class="btn btn-outline-primary" style="width:100px" id="start">開始</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-secondary" id="see" style="width:100px">看答案</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-3">
+                <span>次數:
+                    <span id="times">0</span>
+                </span>
+                <!--  <span class="badge badge-secondary" id="ans"></span>  -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mt-3">
+                <h3>遊戲歷程</h3>
+                <ul class="list-group" id="select">
+                    <!--
+                    <li class="list-group-item">
+                        <span class="badge badge-primary">0A3B</span>3456</li>
+                    -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group mb-1 mt-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="width:120px;">輸入四位數字</span>
+                    </div>
+                    <input type="text" id="input" class="form-control" disabled="true">
+                </div>
+                <br/>
+                <button type="button" class="btn btn-outline-primary mt-3" id="check">檢查答案</button>
+                <button type="button" class="btn btn-outline-secondary mt-3" id="clean">放棄重來</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var answer = "";
+        while (answer.length < 4) {
+            var r = Math.floor(Math.random() * 10);
+            if (!answer.includes(r)) {
+                answer += r;
+            }
+        }
+        //  document.getElementById("ans").innerText = answer;
+
+        var start = document.getElementById("start");
+        start.onclick = function () {
+
+            document.getElementById("input").disabled = false;
+        }
+        var see = document.getElementById("see");
+        see.onclick = function () {
+            alert(answer);
+        }
+        var times = 0;
+        var cheak = document.getElementById("check");
+        cheak.onclick = function () {
+            if (document.getElementById("input").value.length == 4) {
+                var input = document.getElementById("input").value;
+                var a = 0;
+                var b = 0;
+                times += 1;
+                document.getElementById("times").innerText = times;
+                var inputarray = [].slice.call(input);
+                var answerarray = [].slice.call(answer);
+
+                for (var i = 0; i < 4; i++) {
+                    if (answerarray.includes(inputarray[i])) {
+
+                        if (answerarray[i] == inputarray[i]) {
+                            a++;
+                        } else {
+                            b++;
+                        }
+                    }
+                }
+                var x = document.getElementById("select");
+                var span = document.createElement("span");
+                var option = document.createElement("li");              
+                span.className = "badge badge-primary";
+                option.className = "list-group-item";
+                if (answer == input) {
+                    alert("猜對了");
+                    window.location.reload();
+
+                } else {
+                    span.innerText = a + "A" + b + "B";
+                }
+                option.innerText = document.getElementById("input").value;
+                option.appendChild(span);
+                x.appendChild(option);
+
+
+            } else {
+
+                alert("長度太長或太短");
+            }
+            document.getElementById("input").value = "";
+        }
+
+        var clean = document.getElementById("clean");
+        clean.onclick = function () {
+            window.location.reload();
+            //   document.getElementById("select").innerText = "";
+            // document.getElementById("input").value = "";
+        }
+    </script>
+</body>
+
+</html>
