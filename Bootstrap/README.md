@@ -11,12 +11,12 @@
 
 * News  
 網址連結:
-[News ](https://2018buildschool.azurewebsites.net/Bootstrap/News.html)  
+[News](https://2018buildschool.azurewebsites.net/Bootstrap/News.html)  
 ---
 
 * Wiredrame  
 網址連結:
-[News ](https://2018buildschool.azurewebsites.net/Bootstrap/Wiredrame.html)  
+[Wiredrame](https://2018buildschool.azurewebsites.net/Bootstrap/Wireframe.html)  
 ---
 
 
