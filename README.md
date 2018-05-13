@@ -7,7 +7,7 @@ BuildSchool 2018 Spring
 * HTML/CSS
 * Bootsrtap/jQuery   
 * JavaScript
-* TypeScript / AngularJS
+* AngularJS
 * SQL Server
 * ASP.NET MVC
 * 版本控制 Git
