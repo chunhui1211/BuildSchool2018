@@ -11,10 +11,12 @@
 <hr/>
 
 ### [新聞網站](https://2018buildschool.azurewebsites.net/News.html)
+    使用Html/Css+Bootstrap練習頁面刻版
 <img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/News.png?raw=true" width="70%" >     
 <hr/>
 
-### [Wiredrame](https://2018buildschool.azurewebsites.net/Wireframe.html)  
+### [Wiredrame](https://2018buildschool.azurewebsites.net/Wireframe.html)
+    使用Html/Css+Bootstrap練習頁面刻版
 <img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Wireframe.png?raw=true" width="70%">  
 <hr/>
 
