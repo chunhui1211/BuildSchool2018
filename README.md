@@ -33,11 +33,11 @@
 <hr/>
 
 * [累進稅率](https://2018buildschool.azurewebsites.net/Tax.html)  
-<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Wireframe.png?raw=true" width="70%">  
+<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Tax.png?raw=true" width="70%">  
 <hr/>
 
 * [溫度轉換](https://2018buildschool.azurewebsites.net/TemperatureConversion.html)  
-<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Wireframe.png?raw=true" width="70%">  
+<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Temperature%20Conversion.png?raw=true" width="70%">  
 <hr/>
 
 
