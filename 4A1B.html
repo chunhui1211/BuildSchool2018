@@ -26,17 +26,12 @@
                 <span>次數:
                     <span id="times">0</span>
                 </span>
-                <!--  <span class="badge badge-secondary" id="ans"></span>  -->
             </div>
         </div>
         <div class="row">
             <div class="col-4 mt-3">
                 <h3>遊戲歷程</h3>
                 <ul class="list-group" id="select">
-                    <!--
-                    <li class="list-group-item">
-                        <span class="badge badge-primary">0A3B</span>3456</li>
-                    -->
                 </ul>
             </div>
         </div>
@@ -62,8 +57,6 @@
                 answer += r;
             }
         }
-        //  document.getElementById("ans").innerText = answer;
-
         var start = document.getElementById("start");
         start.onclick = function () {
 
@@ -87,7 +80,6 @@
 
                 for (var i = 0; i < 4; i++) {
                     if (answerarray.includes(inputarray[i])) {
-
                         if (answerarray[i] == inputarray[i]) {
                             a++;
                         } else {
@@ -122,8 +114,6 @@
         var clean = document.getElementById("clean");
         clean.onclick = function () {
             window.location.reload();
-            //   document.getElementById("select").innerText = "";
-            // document.getElementById("input").value = "";
         }
     </script>
 </body>

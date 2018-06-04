@@ -283,7 +283,7 @@
                         });
                         var geocoder = new google.maps.Geocoder;
                         var infowindow = new google.maps.InfoWindow;
-                        console.log(e.latLng.lat() + "," + e.latLng.lng());
+                       // console.log(e.latLng.lat() + "," + e.latLng.lng());
                         geocoder.geocode({
                             'location': {
                                 lat: e.latLng.lat(),
@@ -311,9 +311,8 @@
                         geocoder.geocode({
                             'address': address
                         }, function (results, status) {
-                            console.log(results);
+                           // console.log(results);
                             if (status === 'OK') {
-                                console.log();
                                 map.setCenter(results[0]['geometry']['location']);
                                 marker = new google.maps.Marker({
                                     position: results[0]['geometry']['location'],
@@ -429,7 +428,6 @@
             for (var item in localStorage) {
                 if (item == "length") break;
                 var items = JSON.parse(localStorage[item]);
-                // console.log(items);
                 for (var td of $("td")) {
                     if (td.id == items.key) {
                         for (var tmp of items.Items) {
