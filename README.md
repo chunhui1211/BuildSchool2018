@@ -10,7 +10,7 @@
 <img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Buildschool.png?raw=true" width="70%"> 
 <hr/>
 
-### [新聞網站]  (https://2018buildschool.azurewebsites.net/News.html)
+### [新聞網站](https://2018buildschool.azurewebsites.net/News.html)
 <img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/News.png?raw=true" width="70%" >     
 <hr/>
 
@@ -34,7 +34,7 @@
 <img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Password.png?raw=true" width="70%">  
 <hr/>
 
-### [累進稅率]  (https://2018buildschool.azurewebsites.net/Tax.html)  
+### [累進稅率](https://2018buildschool.azurewebsites.net/Tax.html)  
 <img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/Tax.png?raw=true" width="70%">  
 <hr/>
 
