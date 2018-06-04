@@ -1,10 +1,11 @@
 # BuildSchool2018
    
 * [蝦皮購物](https://2018buildschool.azurewebsites.net/Shopee.html)  
-<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/%E8%9D%A6%E7%9A%AE%E8%B3%BC%E7%89%A9.png?raw=true" width=60%>  
----
+<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/%E8%9D%A6%E7%9A%AE%E8%B3%BC%E7%89%A9.png?raw=true" width=60%>
+--- 
 
-* [BuildSchool](https://2018buildschool.azurewebsites.net/Buildschool.html)  
+* [BuildSchool](https://2018buildschool.azurewebsites.net/Buildschool.html)   
+<img src="https://github.com/chunhui1211/BuildSchool2018/blob/master/Image/%E8%9D%A6%E7%9A%AE%E8%B3%BC%E7%89%A9.png?raw=true" width=60%> 
 ---
 
 * [新聞網站](https://2018buildschool.azurewebsites.net/News.html)  
