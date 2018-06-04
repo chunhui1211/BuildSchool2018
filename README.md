@@ -4,56 +4,34 @@
 
 >[作品集](https://2018buildschool.azurewebsites.net/Portfolio.html) 
    
-# Bootstrap  
-* 蝦皮購物   
-網址連結:
-[Shopee](https://2018buildschool.azurewebsites.net/Bootstrap/Shopee.html)  
+* [蝦皮購物](https://2018buildschool.azurewebsites.net/Shopee.html)  
 ---
 
-* BuildSchool   
-網址連結:
-[BuildSchool](https://2018buildschool.azurewebsites.net/Bootstrap/Buildschool.html)  
+* [BuildSchool](https://2018buildschool.azurewebsites.net/Buildschool.html)  
 ---
 
-* News  
-網址連結:
-[News](https://2018buildschool.azurewebsites.net/Bootstrap/News.html)  
+* [新聞網站](https://2018buildschool.azurewebsites.net/News.html)  
 ---
 
-* Wiredrame  
-網址連結:
-[Wiredrame](https://2018buildschool.azurewebsites.net/Bootstrap/Wireframe.html)  
+* [Wiredrame](https://2018buildschool.azurewebsites.net/Wireframe.html)  
 ---
 
-# JavaScript
-* 行事曆   
->網址連結:
-[Calendar](https://2018buildschool.azurewebsites.net/JavaScript/Calendar.html)  
+* [行事曆](https://2018buildschool.azurewebsites.net/Calendar.html)  
 ---
 
-* 角子老虎機   
->網址連結:
-[Slot](https://2018buildschool.azurewebsites.net/JavaScript/Slot.html)  
+* [角子老虎機](https://2018buildschool.azurewebsites.net/Slot.html)  
 ---
 
-* 猜數字4A1B  
->網址連結:
-[4A1B](https://2018buildschool.azurewebsites.net/JavaScript/4A1B.html)  
+* [猜數字4A1B ](https://2018buildschool.azurewebsites.net/4A1B.html)  
 ---
 
-* 終極密碼  
->網址連結:
-[Password](https://2018buildschool.azurewebsites.net/JavaScript/Password.html)  
+* [終極密碼 ](https://2018buildschool.azurewebsites.net/Password.html)  
 ---
 
-* 累進稅率  
->網址連結:
-[Tax](https://2018buildschool.azurewebsites.net/JavaScript/Tax.html)  
+* [累進稅率](https://2018buildschool.azurewebsites.net/Tax.html)  
 ---
 
-* 溫度轉換  
->網址連結:
-[Temperature Conversion](https://2018buildschool.azurewebsites.net/JavaScript/TemperatureConversion.html)  
+* [溫度轉換](https://2018buildschool.azurewebsites.net/TemperatureConversion.html)  
 ---
 
 
